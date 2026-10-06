@@ -84,6 +84,7 @@ button:active {
 
 @media (max-width: 500px){
     body {
+        height: 100vh; /* to center the calculator vertically */
         padding: 10px;
     }
 
@@ -114,6 +115,7 @@ button:active {
 
 @media (max-width: 388px){
     body {
+        height: 100vh; /* to center the calculator vertically */
         padding: 5px;
     }
 
