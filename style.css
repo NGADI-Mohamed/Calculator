@@ -1,6 +1,7 @@
 /* ----------- to center the calculator ----------- */
 
 body {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +53,6 @@ button {
     height: 100px;
     border-radius: 10px;
     border: none;
-    margin: px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     background-color: hsl(0, 0%, 30%); /* black lightency */
     color: white;
@@ -78,4 +78,64 @@ button:active {
 }
 .operator_btn:active {
     background-color: hsl(39, 100%, 70%); /* orange lightency */
+}
+
+/* -------------- mobile ---------------------- */
+
+@media (max-width: 500px){
+    body {
+        padding: 10px;
+    }
+
+    .calculator {
+        max-width: 400px;
+    }
+
+    #display {
+        width: 82%;
+        margin: 20px;
+        padding: 20px 15px;
+        font-size: 2.5rem;
+    }
+
+    #keys {
+        gap: 8px;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1.8rem;
+        width: 77px;
+        height: 77px;
+    }
+}
+
+/* -------------- small mobile ---------------------- */
+
+@media (max-width: 388px){
+    body {
+        padding: 5px;
+    }
+
+    .calculator {
+        max-width: 300px;
+    }
+
+    #display {
+        width: 83%;
+        margin: 15px;
+        padding: 10px;
+        font-size: 2.5rem;
+    }
+
+    #keys {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1.8rem;
+        width: 63px;
+        height: 63px;
+    }
 }
